@@ -5,7 +5,7 @@ import CommentDetail from "../components/CommentDetail.js";
 
 const Content = () => {
   return (
-    <div style={{ width: "50%", margin: "auto" }}>
+    <div style={{ width: "50%", margin: "auto", "margin-top": "70px" }}>
       <div className="ui  comments">
         <CommentDetail
           name="siddharth"

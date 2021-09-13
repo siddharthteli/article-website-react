@@ -6,6 +6,9 @@ class Card extends React.Component {
   }
 
   render() {
+    const onClick = () => {
+      this.props.history(`/article/1`);
+    };
     return (
       <div className="card-wrapper">
         <a href="#">
