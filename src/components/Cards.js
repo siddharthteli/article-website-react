@@ -8,10 +8,10 @@ class Card extends React.Component {
   render() {
     return (
       <div className="card-wrapper">
-        <img src={this.props.image} />
-        <div>
-          <a href="#">Hello</a>
-        </div>
+        <a href="#">
+          <img className="image" src={this.props.image} />
+          <div className="heading">{this.props.heading}</div>
+        </a>
       </div>
     );
   }

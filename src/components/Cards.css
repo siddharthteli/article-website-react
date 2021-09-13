@@ -1,11 +1,14 @@
 .card-wrapper {
     border: 2px black solid;
     margin: 20px;
-    width: max-content;
+    width: 90%;
+    height: 230px;
     font-weight: bolder;
+    padding: 5px;
+    overflow: hidden;
 }
 
-div img {
+.image {
     text-align: center;
     max-width: 250px;
 }
@@ -13,4 +16,8 @@ div img {
 a {
     text-decoration: none;
     color: black;
+}
+
+.heading:hover {
+    text-decoration: underline;
 }
