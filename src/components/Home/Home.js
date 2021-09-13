@@ -15,7 +15,7 @@ class Home extends React.Component {
   componentDidMount() {
     for (let i = 0; i < 10; i++) {
       let card = {
-        image: faker.image.business(),
+        image: faker.image.image(),
         heading: faker.company.catchPhrase(),
         name: faker.name.findName(),
       };
