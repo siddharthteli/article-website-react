@@ -24,6 +24,6 @@ export default class CommentDetail extends React.Component {
 
 CommentDetail.defaultProps = {
   name: "siddharth",
-  comment: "Chal chutiye ",
+  comment: "Chal  ",
   imageSrc: faker.image.avatar(),
 };
