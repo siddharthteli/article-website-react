@@ -1,7 +1,7 @@
 .App {
     text-align: center;
-    margin-left: 300px;
-    margin-right: 300px;
+    margin-left: 250px;
+    margin-right: 250px;
     margin-top: 30vh;
     display: grid;
     grid-template-columns: 30% 30% 30%

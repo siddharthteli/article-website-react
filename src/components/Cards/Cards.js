@@ -18,7 +18,6 @@ class Card extends React.Component {
         },
       });
     };
-    console.log("Value of id From card:" + this.props.value);
     return (
       <div className="card-wrapper" onClick={onClick}>
         <a>

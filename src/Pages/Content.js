@@ -9,9 +9,6 @@ class Content extends React.Component {
     super(props);
   }
   render() {
-    console.log(
-      "Value of histrory push ----" + this.props.location.state.heading
-    );
     return (
       <div className="wrapper">
         <div>

@@ -1,16 +1,15 @@
 .card-wrapper {
     border: 2px black solid;
     margin: 20px;
-    width: 90%;
-    height: 260px;
+    width: 93%;
+    height: 270px;
     font-weight: bolder;
     padding: 5px;
-    overflow: hidden;
 }
 
 .image {
     text-align: center;
-    max-width: 250px;
+    max-width: 220px;
 }
 
 a {
