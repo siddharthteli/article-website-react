@@ -7,8 +7,12 @@ import "./Home.css";
 class Home extends React.Component {
   constructor(props) {
     super(props);
+    this.State = { cardListNew: null };
     this.cardDetail = {};
     this.card_list = [];
+  }
+
+  componentDidMount() {
     for (let i = 0; i < 10; i++) {
       let card = {
         image: faker.image.business(),
@@ -19,9 +23,8 @@ class Home extends React.Component {
     }
 
     this.cardDetail = this.card_list;
+    this.setState({ cardListNew: this.card_list });
   }
-
-  componentDidMount() {}
 
   render() {
     console.log("Value of address:" + faker.address.zipCode());
