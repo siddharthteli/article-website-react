@@ -29,8 +29,14 @@ class Home extends React.Component {
   render() {
     return (
       <div className="App">
-        {this.card_list.map((card) => (
-          <Cards image={card.image} heading={card.heading} name={card.name} />
+        {this.card_list.map((card, idx) => (
+          <Cards
+            key={idx}
+            value={idx}
+            image={card.image}
+            heading={card.heading}
+            name={card.name}
+          />
         ))}
       </div>
     );

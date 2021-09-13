@@ -9,6 +9,7 @@ class Card extends React.Component {
     const onClick = () => {
       this.props.history(`/article/1`);
     };
+    console.log("Value of id From card:" + this.props.value);
     return (
       <div className="card-wrapper">
         <a href="#">
