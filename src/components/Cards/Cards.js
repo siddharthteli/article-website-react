@@ -1,5 +1,6 @@
 import React from "react";
 import "./Cards.css";
+import { withRouter } from "react-router-dom";
 class Card extends React.Component {
   constructor(props) {
     super(props);
@@ -7,12 +8,15 @@ class Card extends React.Component {
 
   render() {
     const onClick = () => {
-      this.props.history(`/article/1`);
+      this.props.history.push({
+        pathname: `/article/1`,
+        state: { siddharth: "Hello" },
+      });
     };
     console.log("Value of id From card:" + this.props.value);
     return (
-      <div className="card-wrapper">
-        <a href="#">
+      <div className="card-wrapper" onClick={onClick}>
+        <a>
           <img className="image" src={this.props.image} />
           <div className="heading">{this.props.heading}</div>
           <div class="author">{this.props.name}</div>
@@ -22,4 +26,4 @@ class Card extends React.Component {
   }
 }
 
-export default Card;
+export default withRouter(Card);
