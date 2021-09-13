@@ -27,7 +27,6 @@ class Home extends React.Component {
   }
 
   render() {
-    console.log("Value of address:" + faker.address.zipCode());
     return (
       <div className="App">
         {this.card_list.map((card) => (
