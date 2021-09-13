@@ -1,12 +1,19 @@
 import React from "react";
-
+import "./Cards.css";
 class Card extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    return <div>asda</div>;
+    return (
+      <div className="card-wrapper">
+        <img src={this.props.image} />
+        <div>
+          <a href="#">Hello</a>
+        </div>
+      </div>
+    );
   }
 }
 

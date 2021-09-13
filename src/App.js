@@ -8,12 +8,17 @@ const App = () => {
   console.log("Value of address:" + faker.address.zipCode());
   return (
     <div className="App">
-      <div></div>
-      <Cards />
+      <div>
+        <Cards image={faker.image.sports()} />
+      </div>
 
-      <Cards />
+      <div>
+        <Cards image={faker.image.transport()} />
+      </div>
 
-      <Cards />
+      <div>
+        <Cards image={faker.image.nature()} />
+      </div>
     </div>
   );
 };
