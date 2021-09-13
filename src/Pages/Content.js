@@ -15,7 +15,10 @@ class Content extends React.Component {
     return (
       <div className="wrapper">
         <div>
-          <h1>{this.props.location.state.heading}</h1>
+          <h1>
+            {this.props.location.state.heading}-
+            <label> {this.props.location.state.name}</label>
+          </h1>
           <img src={this.props.location.state.image} />
           <p>{this.props.location.state.content}</p>
         </div>
