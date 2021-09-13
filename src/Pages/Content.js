@@ -3,17 +3,22 @@ import ReactDOM from "react-dom";
 import faker from "faker";
 import CommentDetail from "../components/CommentDetail.js";
 import { render } from "@testing-library/react";
-
+import "./Content.css";
 class Content extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
     console.log(
-      "Value of histroy push ----" + this.props.location.state.siddharth
+      "Value of histrory push ----" + this.props.location.state.heading
     );
     return (
-      <div style={{ width: "50%", margin: "auto", "margin-top": "70px" }}>
+      <div className="wrapper">
+        <div>
+          <h1>{this.props.location.state.heading}</h1>
+          <img src={this.props.location.state.image} />
+          <p>{this.props.location.state.content}</p>
+        </div>
         <div className="ui  comments">
           <CommentDetail
             name="siddharth"

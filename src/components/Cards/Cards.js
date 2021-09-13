@@ -10,7 +10,12 @@ class Card extends React.Component {
     const onClick = () => {
       this.props.history.push({
         pathname: `/article/1`,
-        state: { siddharth: "Hello" },
+        state: {
+          heading: this.props.heading,
+          image: this.props.image,
+          name: this.props.name,
+          content: this.props.content,
+        },
       });
     };
     console.log("Value of id From card:" + this.props.value);

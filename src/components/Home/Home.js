@@ -18,6 +18,7 @@ class Home extends React.Component {
         image: faker.image.image(),
         heading: faker.company.catchPhrase(),
         name: faker.name.findName(),
+        content: faker.lorem.paragraphs() + faker.lorem.paragraphs(),
       };
       this.card_list.push(card);
     }
@@ -36,6 +37,7 @@ class Home extends React.Component {
             image={card.image}
             heading={card.heading}
             name={card.name}
+            content={card.content}
           />
         ))}
       </div>
