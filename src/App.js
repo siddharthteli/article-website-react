@@ -1,13 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+
 import Content from "./Pages/Content.js";
-function App() {
+import Cards from "./components/Cards";
+import faker from "faker";
+const App = () => {
+  console.log("Value of address:" + faker.address.zipCode());
   return (
     <div className="App">
-      <button>submit</button>
+      <div></div>
+      <Cards />
+
+      <Cards />
+
+      <Cards />
     </div>
   );
-}
+};
 
 export default App;
