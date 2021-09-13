@@ -8,25 +8,22 @@ class App extends React.Component {
   render() {
     console.log("Value of address:" + faker.address.zipCode());
     return (
-      <div className="App">
-        <div>
+      <div>
+        <div className="App">
           <Cards
             image={faker.image.sports()}
             heading={faker.company.catchPhrase()}
+            name={faker.name.findName()}
           />
-        </div>
-
-        <div>
           <Cards
-            image={faker.image.transport()}
+            image={faker.image.business()}
             heading={faker.company.catchPhrase()}
+            name={faker.name.findName()}
           />
-        </div>
-
-        <div>
           <Cards
             image={faker.image.nature()}
             heading={faker.company.catchPhrase()}
+            name={faker.name.findName()}
           />
         </div>
       </div>

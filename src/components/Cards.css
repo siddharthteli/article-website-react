@@ -2,7 +2,7 @@
     border: 2px black solid;
     margin: 20px;
     width: 90%;
-    height: 230px;
+    height: 260px;
     font-weight: bolder;
     padding: 5px;
     overflow: hidden;
@@ -20,4 +20,9 @@ a {
 
 .heading:hover {
     text-decoration: underline;
+}
+
+.author {
+    text-align: left;
+    color: grey;
 }

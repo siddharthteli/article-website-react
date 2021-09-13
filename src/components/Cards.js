@@ -11,6 +11,7 @@ class Card extends React.Component {
         <a href="#">
           <img className="image" src={this.props.image} />
           <div className="heading">{this.props.heading}</div>
+          <div class="author">{this.props.name}</div>
         </a>
       </div>
     );
